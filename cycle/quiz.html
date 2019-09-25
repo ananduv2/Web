@@ -1,0 +1,97 @@
+<html>
+    <body>
+        <ol>
+            <li>A train 120 meters long is running with a speed of 60 km/hr. In what time will it pass a boy who is running at 6 km/hr in the direction opposite to that in which the train is going?
+                    <br><br><input type="text" id="q1"><br><br><p id="a1"></p>
+            </li>
+            <li>Devesh can cover a certain distance in 1 hour 24 minutes by covering two-third of the distance at 6 km/hour and the rest at 7 km/hr. Calculate total distance.
+                    <br><br><input type="text"id="q2"><br><br><p id="a2"></p>
+            </li>
+            <li>IFind the number of perfect squares in the given series 2013, 2020, 2027, ……………., 2300? (Hint 44^2=1936)?
+                    <br><br><input type="text"id="q3"><br><br><p id="a3"></p>
+            </li>
+            <li>There is a tank whose 1/7 th part is filled with fuel. If 22 liters of fuel is poured into the tank, the indicator rises to 1/5 th mark of the tank. So what is the total capacity of the tank?
+                    <br><br><input type="text"id="q4"><br><br><p id="a4"></p>
+            </li>
+            <li>In the series of 7^1+7^2+7^3+7^4…….+7^204+7^205, how many numbers are there with the unit place as 3?
+                    <br><br><input type="text"id="q5"><br><br><p id="a5"></p>
+             </li>
+             <li>Find the number of divisors of 1728(including 1 and the number itself)
+                    <br><br><input type="text"id="q6"><br><br><p id="a6"></p>
+            </li>
+        </ol>
+        <input type="button" value="submit"onclick="click3()">
+        <script>
+                function click3(){
+                        q1=document.getElementById("q1").value;
+                        if(q1==6.54){
+                                document.getElementById("a1").innerHTML="Answer:True  "; 
+                                a1=1;
+                        }
+                        else {
+                                document.getElementById("a1").innerHTML="Answer:False  8";
+                                a1=0;
+                        }
+
+
+                        q2=document.getElementById("q2").value;
+                        if(q2==6){ 
+                                document.getElementById("a2").innerHTML="Answer:True";
+                                a2=1;
+                        }
+                        else{
+                                 document.getElementById("a2").innerHTML="Answer:False  2";
+                                 a2=0;
+                        }
+
+
+                        q3=document.getElementById("q3").value;
+                        if(q3==1){ 
+                                document.getElementById("a3").innerHTML="Answer:True";
+                                a3=1; 
+                        }
+                        else{ 
+                                document.getElementById("a3").innerHTML="Answer:False  1";
+                                a3=0;
+                        }
+
+
+                        q4=document.getElementById("q4").value;
+                        if(q4==385){
+                                document.getElementById("a4").innerHTML="Answer:True";
+                                a4=1;
+                        }
+                        else {
+                                document.getElementById("a4").innerHTML="Answer:False  385";
+                                a4=0;
+                        }
+ 
+
+                        q5=document.getElementById("q5").value;
+                        if(q5==2){
+                                 document.getElementById("a5").innerHTML="Answer:True";
+                                 a5=1;
+                        } 
+                        else{
+                                document.getElementById("a5").innerHTML="Answer:False  2";
+                                a5=0;
+                        }
+
+
+                        q6=document.getElementById("q6").value;
+                        if(q6==1){
+                                document.getElementById("a6").innerHTML="Answer:True";
+                                a6=1;
+                        } 
+                        else {
+                                document.getElementById("a6").innerHTML="Answer:False  1";
+                                a6=0;
+                        }
+                        if((a1==1)&& (a2==1)&&(a3==1)&& (a4==1)&& (a5==1)&& (a6==1) ){
+                                alert("Successfully Completed");
+                                document.location = "success.html";
+                        }
+                }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,49 @@
+<html>
+    <body>
+        
+            <center>
+                <h1>Personal Details</h1>
+            </center>
+            <p>Please fill the form with valid details</p>
+            <br>
+            Name:<br>
+            <input type="text" id="name"><br><br>
+            Gender:<br>
+            <input type="radio" id="gender" value="male"> Male<br>
+            <input type="radio" id="gender" value="female"> Female<br>
+            <input type="radio" id="gender" value="other"> Other
+            <br><br>Qualification:<br>
+            <input type="checkbox" name="Qualification" value="SSLC"> SSLC<br>
+            <input type="checkbox" name="Qualification"  value="Plus Two"> Plus Two<br>
+            <input type="checkbox" name="Qualification"  value="Graduation"> Graduation<br>
+            <input type="checkbox" name="Qualification"  value="Post graduation"> Post graduation<br>
+            <input type="checkbox" name="Qualification"  value="PHD">PHD<br>
+            <input type="checkbox" name="Qualification"  value="Other"> Other
+            <br><br>
+            phone no:<input type="number" id="phone"><br>
+            <br><br>
+            <button  name="submit"  onclick="click1()">submit</button>
+        
+        <script>
+            function click1(){
+            
+                var items=document.getElementsByName('Qualification');
+				var selectedItems="";
+				for(var i=0; i<items.length; i++){
+					if(items[i].type=='checkbox' && items[i].checked==true)
+						selectedItems+=items[i].value+"\n";
+				}
+                name=document.getElementById("name").value;
+                gender=document.getElementById("gender").value;
+       
+                phone=document.getElementById("phone").value;
+               a= window.confirm("name:"+name+"  gender:"+gender+"   Qualification:"+selectedItems+"   phone no:"+phone);
+               if(a)
+                document.location = "quiz.html";
+               else
+                 document.location="Home.html";
+               
+            }
+        </script>
+    </body>
+</html>

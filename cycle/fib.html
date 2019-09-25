@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <title>fib</title>
+    <body>
+        <form>
+            <input type="text" id="n"><br>
+            <button onclick="fib()">Submit</button><br>
+        </form>
+        <script>
+           function fib()
+            {
+                fibnocii(document.getElementById("n").value)
+            }
+            function fibnocii(n) 
+            {
+                t1 = 0;
+                 t2 = 1;
+                 document.write("fibnocii series is:<br>")
+                for (i = 1; i <= n; ++i)
+                  {
+                     document.write(t1+", ");
+                     nextTerm = t1 + t2;
+                     t1 = t2;
+                     t2 = nextTerm;
+    }
+            }
+        </script>
+    </body>
+</html>
